@@ -13,8 +13,8 @@
   DTS:ObjectName="LoadEXM"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="81"
-  DTS:VersionGUID="{FF9566B3-8193-4D4E-9BE2-11C5263FFEB7}">
+  DTS:VersionBuild="84"
+  DTS:VersionGUID="{9AEA7D00-AAB1-4838-90EA-C5471609AE52}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2575,11 +2575,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <AnnotationLayout
-          Text="/*****************************************************************************************************************&#xA;NAME:    SSIS_PDS_Template.dtsx&#xA;PURPOSE: SSIS Problem, Design, Solution Package Template&#xA;&#xA;SUPPORT: Jaussi Consulting LLC&#xA;         www.jaussiconsulting.net&#xA;         jon@jaussiconsulting.net&#xA;&#xA;MODIFICATION LOG:&#xA;Ver       Date         Author                 Description&#xA;-------   ----------   --------------------   ------------------------------------------------------------&#xA;1.0       02/20/2019   Jon Jaussi (JJAUSSI)   1. Built this package&#xA;&#xA;&#xA;RUNTIME: 1 min&#xA;&#xA;NOTES: This package was built based on this reference guide...&#xA;ISBN: 978-0-470-52576-0&#xA;Microsoft SQL Server 2008 Integration Services: Problem–Design–Solution&#xA;Chapter 2: SSIS Management Framework Design&#xA;&#xA;Log Variable value change:&#xA;- myVariable &gt; Properties &gt; RaiseChangedEvent &gt; True&#xA;&#xA;&#xA;LICENSE: This code is covered by the GNU General Public License which guarantees end users&#xA;the freedom to run, study, share, and modify the code. This license grants the recipients&#xA;of the code the rights of the Free Software Definition. All derivative work can only be&#xA;distributed under the same license terms.&#xA;&#xA;******************************************************************************************************************/"
+          Text="/*****************************************************************************************************************&#xA;NAME:    LoadEXM.dtsx&#xA;PURPOSE: Load EXM database&#xA;&#xA;SUPPORT: Jaussi Consulting LLC&#xA;         www.jaussiconsulting.net&#xA;         jon@jaussiconsulting.net&#xA;&#xA;MODIFICATION LOG:&#xA;Ver       Date         Author                 Description&#xA;-------   ----------   --------------------   ------------------------------------------------------------&#xA;1.0       11/03/2019   Jon Jaussi (JJAUSSI)   1. Built this package for LDS BC IT243&#xA;&#xA;&#xA;RUNTIME: &#xA;1 sec&#xA;&#xA;NOTES:&#xA;This package loads the EXM (Example) database &#xA;&#xA;LICENSE: This code is covered by the GNU General Public License which guarantees end users&#xA;the freedom to run, study, share, and modify the code. This license grants the recipients&#xA;of the code the rights of the Free Software Definition. All derivative work can only be&#xA;distributed under the same license terms.&#xA;&#xA;******************************************************************************************************************/"
           ParentId="Package\Documentation"
-          Size="742,NaN"
+          Size="740,367"
           Id="ce57ee3c-d205-4c9a-9e88-24b1ee49b8eb"
-          TopLeft="5.5,5.5">
+          TopLeft="5.50000000000006,5.5">
           <AnnotationLayout.FontInfo>
             <mssge:FontInfo
               Family="Consolas"
@@ -2594,7 +2594,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
-          PanelSize="753,493"
+          PanelSize="751,428"
           Size="176,43"
           Id="Package\Documentation"
           TopLeft="5.50000000000006,519.5" />
