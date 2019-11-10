@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadEXM"
   DTS:PackageType="5"
-  DTS:VersionBuild="93"
-  DTS:VersionGUID="{9610926D-B6BD-4F30-B816-91077778EE34}">
+  DTS:VersionBuild="94"
+  DTS:VersionGUID="{2973219B-D59B-458C-B17C-13D50630D585}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

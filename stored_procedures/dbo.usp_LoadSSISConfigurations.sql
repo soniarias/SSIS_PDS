@@ -1,16 +1,17 @@
 USE [SSIS_PDS]
 GO
 
-/****** Object:  StoredProcedure [dbo].[usp_LoadSSISConfigurations]    Script Date: 11/9/2019 7:20:20 PM ******/
+/****** Object:  StoredProcedure [dbo].[usp_LoadSSISConfigurations]    Script Date: 11/10/2019 12:27:40 AM ******/
 DROP PROCEDURE [dbo].[usp_LoadSSISConfigurations]
 GO
 
-/****** Object:  StoredProcedure [dbo].[usp_LoadSSISConfigurations]    Script Date: 11/9/2019 7:20:20 PM ******/
+/****** Object:  StoredProcedure [dbo].[usp_LoadSSISConfigurations]    Script Date: 11/10/2019 12:27:40 AM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 
@@ -46,6 +47,8 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
          
 ******************************************************************************************************************/
 
+    TRUNCATE TABLE dbo.[SSIS Configurations];
+
 
     -- 1) Common Configurations
 
@@ -72,7 +75,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
 
 
 
-		  
+
     -- 2) Solution Level Configurations
 
 
@@ -99,8 +102,8 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
 
 
 
+
 		  	
-			
 
     -- 3) Package level configurations
 
@@ -127,32 +130,6 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
           );
 
 
-
-
-		  		   		  
-    -- 3.3) LoadEXM
-
-    DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'LoadEXM';
-	
-
-	-- 3.3.1) v_data_share_root
-
-    INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
-                                        , ConfiguredValue
-                                        , PackagePath
-                                        , ConfiguredValueType)
-    VALUES
-          (
-           'LoadEXM'
-         --, 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\dev_files\txt_files\'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_dw\txt_files\'
-         , '\Package.Variables[User::v_data_share_root].Properties[Value]'
-         , 'String'
-          );
-
-		  
-		  
 END;
 
 GO
