@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadEXM"
   DTS:PackageType="5"
-  DTS:VersionBuild="94"
-  DTS:VersionGUID="{2973219B-D59B-458C-B17C-13D50630D585}">
+  DTS:VersionBuild="96"
+  DTS:VersionGUID="{02F89D47-B727-41C8-92E3-69842C37E873}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -22,6 +22,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{355E946B-61C6-4A3A-9CAC-9CE79C4613C1}"
       DTS:ObjectName="DATA.txt">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">REPLACE(@[User::v_data_share_root], "IT_243\\repos\\DFNB_dw", "IT_240\\repos\\EXM") + "DATA.txt"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"

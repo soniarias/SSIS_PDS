@@ -123,7 +123,6 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
     VALUES
           (
            'SSIS_PDS_Template'
-         --, 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\dev_files\txt_files\'
 		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_dw\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
