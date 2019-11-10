@@ -5,26 +5,23 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="UT-BW010148-LFP"
   DTS:CreatorName="ZBC\z035330"
-  DTS:DTSID="{DCF6F7D0-A727-4D8E-87E1-C925B802ED25}"
+  DTS:DTSID="{1BB010BB-1842-4696-A06C-C21695272211}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.1301.433"
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadEXM"
   DTS:PackageType="5"
-  DTS:ProtectionLevel="0"
-  DTS:VersionBuild="84"
-  DTS:VersionGUID="{9AEA7D00-AAB1-4838-90EA-C5471609AE52}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{9610926D-B6BD-4F30-B816-91077778EE34}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DATA.txt]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{0E918DD4-4D6B-4B24-AEB6-DB55070DD4D2}"
+      DTS:DTSID="{355E946B-61C6-4A3A-9CAC-9CE79C4613C1}"
       DTS:ObjectName="DATA.txt">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">REPLACE(@[User::v_data_share_root], "IT_243", "IT_240") + "DATA.txt"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -42,7 +39,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="pl_id"
-              DTS:DTSID="{7A4DE4D3-2DE9-4F4E-B1B1-B3E5BC5D3E06}"
+              DTS:DTSID="{ECB4B63E-9476-40C6-8A48-62611C430427}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -51,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="l_name"
-              DTS:DTSID="{D874B210-0083-4722-88AD-48F9AF936756}"
+              DTS:DTSID="{B6ED0AAC-1E4B-4995-8E01-55FBB6C9D261}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -60,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="f_name"
-              DTS:DTSID="{774F8915-EB08-4AA0-857F-3460B19573A0}"
+              DTS:DTSID="{5EE7F081-E5E6-4191-A413-A95DE7E57E49}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -69,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="pl_name"
-              DTS:DTSID="{588C8014-0C2D-4286-85DF-E0EEE37CAAE3}"
+              DTS:DTSID="{A4C43B88-9237-475F-8D7C-9C47A8725ABB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +74,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="t_id"
-              DTS:DTSID="{DFBBA329-C121-485D-A502-13FFD8C532F3}"
+              DTS:DTSID="{4E247181-28B9-4645-9469-D07668B728CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +82,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="p_id"
-              DTS:DTSID="{0C1ADD5C-C31C-499D-AB7F-9BC49A66BACA}"
+              DTS:DTSID="{4036EF94-1F72-44E7-A1A3-819D9204D06B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +90,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="pl_num"
-              DTS:DTSID="{11B725DF-D315-4033-A0FA-A919A7A74439}"
+              DTS:DTSID="{D5FCD427-883B-4D23-A7F8-50E80E552DA3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +99,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="p_code"
-              DTS:DTSID="{EB4369DE-01BC-485F-89D6-FB9DFA6F3650}"
+              DTS:DTSID="{5DC666CD-44CC-4F1A-9609-FE2A417D1F67}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +108,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="p_name"
-              DTS:DTSID="{7329DC3C-73E3-4DE8-B5CF-F7F1ECC1A8A6}"
+              DTS:DTSID="{29691D98-9CAB-4492-A2D9-2CC539F779AF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -119,7 +116,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="p_target"
-              DTS:DTSID="{64EEDFE9-B22A-4D5D-8A58-87926B037F82}"
+              DTS:DTSID="{F54F6A81-B7E5-4905-BA0D-E0F86D5205F2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -128,7 +125,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="t_code"
-              DTS:DTSID="{052B4529-08FC-4FDE-A999-F3596AED1AD9}"
+              DTS:DTSID="{357645EA-4DCB-4BC0-BCBA-8BD15B835886}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -137,7 +134,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[EXM]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{313A8F5F-45F7-4293-B396-F8760089BCBF}"
+      DTS:DTSID="{A522647E-853F-4C8E-9A9B-4B1F6334D136}"
       DTS:ObjectName="EXM">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::conn_EXM]</DTS:PropertyExpression>
@@ -149,7 +146,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SSIS_PDS]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{F967C066-002B-427E-B174-AF8FF805EC0C}"
+      DTS:DTSID="{23C0710E-B54A-430C-AE1E-9C41AC41C667}"
       DTS:ObjectName="SSIS_PDS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -162,31 +159,37 @@
       DTS:ConfigurationString="SSIS_PDS_CONFIG_FILE"
       DTS:ConfigurationType="5"
       DTS:CreationName=""
-      DTS:DTSID="{1D740B33-4A01-4ED1-9900-AFA13A6E3D96}"
+      DTS:DTSID="{2C6A8CF9-D118-4A92-B0ED-6CFE3E7D1F50}"
       DTS:ObjectName="XML Configuration" />
     <DTS:Configuration
       DTS:ConfigurationString="&quot;SSIS_PDS&quot;;&quot;[dbo].[SSIS Configurations]&quot;;&quot;CommonConfigurations&quot;;"
       DTS:ConfigurationType="7"
       DTS:CreationName=""
-      DTS:DTSID="{0B125C14-E489-440D-903A-2500B597AA17}"
-      DTS:ObjectName="Solution Level Configuration" />
+      DTS:DTSID="{DA3F5CE9-2A7A-45F2-9F9B-D8ED00084857}"
+      DTS:ObjectName="Common Configurations" />
     <DTS:Configuration
-      DTS:ConfigurationString="BatchLogID"
-      DTS:ConfigurationVariable="\Package.Variables[User::BatchLogID].Properties[Value]"
+      DTS:ConfigurationString="&quot;SSIS_PDS&quot;;&quot;[dbo].[SSIS Configurations]&quot;;&quot;jc&quot;;"
+      DTS:ConfigurationType="7"
       DTS:CreationName=""
-      DTS:DTSID="{2519DC31-94FE-4B16-98BB-E07AB811B094}"
-      DTS:ObjectName="BatchLogID" />
+      DTS:DTSID="{7E265A71-DEE3-40F1-99B8-A94C26E987EC}"
+      DTS:ObjectName="Solution Level Configuration" />
     <DTS:Configuration
       DTS:ConfigurationString="&quot;SSIS_PDS&quot;;&quot;[dbo].[SSIS Configurations]&quot;;&quot;LoadEXM&quot;;"
       DTS:ConfigurationType="7"
       DTS:CreationName=""
-      DTS:DTSID="{C429D6CB-E05E-4932-B42F-6F828F2B3D01}"
+      DTS:DTSID="{00D4CB22-2D64-414A-95F4-D772268AEEB8}"
       DTS:ObjectName="Package Level Configuration" />
+    <DTS:Configuration
+      DTS:ConfigurationString="BatchLogID"
+      DTS:ConfigurationVariable="\Package.Variables[User::BatchLogID].Properties[Value]"
+      DTS:CreationName=""
+      DTS:DTSID="{D2EA1F8F-E4D1-4430-A994-040BBBF05D76}"
+      DTS:ObjectName="BatchLogID" />
   </DTS:Configurations>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F07DD41D-4139-43D6-9285-523F1F114D45}"
+      DTS:DTSID="{541B2C8E-B18F-4E54-B1FD-247146258A2D}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="BatchLogID">
@@ -195,7 +198,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A36EC6CC-A3DD-4911-9C6B-F37DBE01FA67}"
+      DTS:DTSID="{DEA26266-0F12-4B9C-ABD2-B2C0FFB96541}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="conn_DFNB3">
+      <DTS:VariableValue
+        DTS:DataType="8">Data Source=localhost;Initial Catalog=DFNB3;Provider=SQLNCLI11;Integrated Security=SSPI;</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A9893958-6389-4C48-A2D9-D84F7B293F97}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="conn_EXM">
@@ -204,7 +216,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7FE0BE87-0A60-4CAF-85F4-E6011F33D7D9}"
+      DTS:DTSID="{19052611-9712-48F8-91BF-E689CB175689}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="EndBatchAudit">
@@ -213,7 +225,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{8082335A-776E-467C-8F7C-30C407D75BE1}"
+      DTS:DTSID="{8CA845B8-2E39-4276-9FE1-4EFBA7B73825}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="PackageLogID">
@@ -222,7 +234,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3893255F-CECA-4BB1-A53E-5E9C26F67F43}"
+      DTS:DTSID="{38B78AE4-46CC-4708-928E-9AC9CE71C7DA}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="strVariableValue">
@@ -232,16 +244,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{150136F3-E92A-49B5-8A1E-D4AB469290E1}"
+      DTS:DTSID="{2998217E-0401-4C14-B142-71815A32698C}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="v_data_share_root">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\EXM\txt_files\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_dw\txt_files\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2232CFEE-6474-448D-AA33-27096B7FA047}"
+      DTS:DTSID="{73B28D1E-32DC-4D14-867C-5DA604C28D24}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="v_get_date"
@@ -256,7 +268,7 @@
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
       DTS:Disabled="True"
-      DTS:DTSID="{533EB718-5445-4CCD-BF73-E0D0DE8ADA65}"
+      DTS:DTSID="{192A3F51-46AF-4DB5-BD21-C0EBD669F609}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Documentation">
@@ -267,7 +279,7 @@
       DTS:refId="Package\Parent container"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{CB8B89EA-4CF1-4222-BD65-2FF14B206073}"
+      DTS:DTSID="{2978EC15-BCD8-4CD9-8C0F-B88430C503B2}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Parent container">
@@ -278,7 +290,7 @@
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
           DTS:Disabled="True"
-          DTS:DTSID="{EE53EAB5-B671-49CE-AAA3-0715177BE35C}"
+          DTS:DTSID="{28CDD021-D5E1-4EEE-B7E0-217479425B06}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Output raw data"
@@ -801,7 +813,7 @@
           DTS:refId="Package\Parent container\Reload raw data"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Sequence Container"
-          DTS:DTSID="{33394683-775F-460F-9AAB-6ACD33C00D5A}"
+          DTS:DTSID="{F23CFE01-B345-4DBB-B451-570098A42326}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
           DTS:ObjectName="Reload raw data">
@@ -811,7 +823,7 @@
               DTS:refId="Package\Parent container\Reload raw data\Load data"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{B2D8F809-8F23-4C9B-896E-C5AFA638004F}"
+              DTS:DTSID="{878CC549-4F09-4E5A-A771-9583B0040394}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Load data"
@@ -1426,7 +1438,7 @@
               DTS:refId="Package\Parent container\Reload raw data\Truncate data"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:DTSID="{BE200621-36F2-4F6D-82EB-59E5C2433116}"
+              DTS:DTSID="{7F4FA1BB-FDBA-4DFE-BCBB-2D46F2C8B627}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate data"
@@ -1434,7 +1446,7 @@
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{313A8F5F-45F7-4293-B396-F8760089BCBF}"
+                  SQLTask:Connection="{A522647E-853F-4C8E-9A9B-4B1F6334D136}"
                   SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.tblData;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
@@ -1443,7 +1455,7 @@
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Parent container\Reload raw data.PrecedenceConstraints[Constraint]"
               DTS:CreationName=""
-              DTS:DTSID="{D9AD416C-85D0-406A-961C-3BBD41626B5E}"
+              DTS:DTSID="{BAFCAE6F-3A17-447A-A694-80FE5AC4523E}"
               DTS:From="Package\Parent container\Reload raw data\Truncate data"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint"
@@ -1456,7 +1468,7 @@
       DTS:refId="Package\SQL LogPackageEnd"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{84BCB44B-3171-485A-83AB-34D78A128186}"
+      DTS:DTSID="{C0E2BA2B-2D32-4B77-AC73-35EE1C4C85C4}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL LogPackageEnd"
@@ -1464,7 +1476,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F967C066-002B-427E-B174-AF8FF805EC0C}"
+          SQLTask:Connection="{23C0710E-B54A-430C-AE1E-9C41AC41C667}"
           SQLTask:SqlStatementSource="exec dbo.LogPackageEnd&#xA;@PackageLogID = ?&#xA;,@BatchLogID = ?&#xA;,@EndBatchAudit = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -1491,7 +1503,7 @@
       DTS:refId="Package\SQL LogPackageTask"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8B6AEF71-6EDB-48F0-B99D-A1FE2CE07BB0}"
+      DTS:DTSID="{8FE20CB4-A098-4C04-BCB2-1E0E22693198}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="SQL LogPackageTask"
@@ -1499,7 +1511,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F967C066-002B-427E-B174-AF8FF805EC0C}"
+          SQLTask:Connection="{23C0710E-B54A-430C-AE1E-9C41AC41C667}"
           SQLTask:SqlStatementSource="exec dbo.LogPackageStart&#xA;@BatchLogID = ?&#xA;,@PackageName = ?&#xA;,@ExecutionInstanceID = ?&#xA;,@MachineName = ?&#xA;,@UserName = ?&#xA;,@StartDatetime = ?&#xA;,@PackageVersionGUID = ?&#xA;,@VersionMajor = ?&#xA;,@VersionMinor = ?&#xA;,@VersionBuild = ?&#xA;,@VersionComment = ?&#xA;,@PackageGUID = ?&#xA;,@CreationDate = ?&#xA;,@CreatedBy = ?"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -1603,7 +1615,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{F46953B4-1DB6-43A6-9A19-9EED5C9EDA91}"
+      DTS:DTSID="{967AFFD2-6D5D-4DFA-BF20-0B4B92D86DCC}"
       DTS:From="Package\SQL LogPackageTask"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -1611,7 +1623,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{883E0888-5AD7-49E0-8006-8D0AF6256D2D}"
+      DTS:DTSID="{2FDD96D8-8AE4-465A-A4D1-CB788C144A4D}"
       DTS:From="Package\Parent container"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -1621,7 +1633,7 @@
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{6F9600F2-868E-4481-BA56-E7188A2B74BA}"
+      DTS:DTSID="{83DE341E-8C67-409E-8286-991778982BDD}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -1629,7 +1641,7 @@
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{21CB70B9-DE28-43B4-9070-BD3F4338EAB3}"
+          DTS:DTSID="{398A75CC-458C-4D25-9CB3-B558A012B1E1}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -1642,14 +1654,14 @@
           DTS:refId="Package.EventHandlers[OnError]\SQL LogPackageError"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{EEDDBD7F-2A0F-457A-A634-0DBA84F54EA6}"
+          DTS:DTSID="{4D25DB05-7CC1-49CA-924A-935504408253}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SQL LogPackageError">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F967C066-002B-427E-B174-AF8FF805EC0C}"
+              SQLTask:Connection="{23C0710E-B54A-430C-AE1E-9C41AC41C667}"
               SQLTask:SqlStatementSource="exec dbo.LogPackageError&#xA;@PackageLogID = ?&#xA;,@BatchLogID = ?&#xA;,@SourceName = ?&#xA;,@SourceID = ?&#xA;,@ErrorCode = ?&#xA;,@ErrorDescription = ?&#xA;,@EndBatchAudit = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -1701,7 +1713,7 @@
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPostExecute]"
       DTS:CreationName="OnPostExecute"
-      DTS:DTSID="{3F6BDBB8-B10A-4202-AA2A-713673F3B59E}"
+      DTS:DTSID="{06098C0D-AD66-4FC5-AA64-05FF0B908E60}"
       DTS:EventID="0"
       DTS:EventName="OnPostExecute"
       DTS:LocaleID="-1">
@@ -1709,7 +1721,7 @@
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{11DBD4A7-7DCA-4377-BBA5-9BBFADD4E8A2}"
+          DTS:DTSID="{D1CA776F-5C8E-49BC-B8E2-6FEBE1168A8A}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -1722,14 +1734,14 @@
           DTS:refId="Package.EventHandlers[OnPostExecute]\SQL LogTaskPostExecute"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{12B5FAD2-ED5F-4DD9-8A58-EA369228579F}"
+          DTS:DTSID="{5617C644-2066-4E50-8B5E-84D0A0CEF76F}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SQL LogTaskPostExecute">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F967C066-002B-427E-B174-AF8FF805EC0C}"
+              SQLTask:Connection="{23C0710E-B54A-430C-AE1E-9C41AC41C667}"
               SQLTask:SqlStatementSource="exec dbo.LogTaskPostExecute&#xA;@PackageLogID = ?&#xA;,@SourceID = ?&#xA;,@PackageID = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -1757,7 +1769,7 @@
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPreExecute]"
       DTS:CreationName="OnPreExecute"
-      DTS:DTSID="{3AA32D25-C837-48F5-84A3-170E1ADCCAF8}"
+      DTS:DTSID="{9D670721-118F-4326-866C-052501F1F059}"
       DTS:EventID="-1"
       DTS:EventName="OnPreExecute"
       DTS:LocaleID="-1">
@@ -1765,7 +1777,7 @@
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{EE12838F-ECE8-46AE-A3F9-2EFC1F80AAF5}"
+          DTS:DTSID="{6FC47A83-16DE-4DE6-BE5B-6B7802AEC2BA}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -1778,14 +1790,14 @@
           DTS:refId="Package.EventHandlers[OnPreExecute]\SQL LogTaskPreExecute"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{4213C633-56C8-44D7-AD37-18CCBEF88CEB}"
+          DTS:DTSID="{E0EDD9ED-3992-4DCF-84B7-E6AC0F2A32CA}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SQL LogTaskPreExecute">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F967C066-002B-427E-B174-AF8FF805EC0C}"
+              SQLTask:Connection="{23C0710E-B54A-430C-AE1E-9C41AC41C667}"
               SQLTask:SqlStatementSource="exec dbo.LogTaskPreExecute&#xA;@PackageLogID = ?&#xA;,@SourceName = ?&#xA;,@SourceID = ?&#xA;,@PackageID = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -1819,7 +1831,7 @@
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnVariableValueChanged]"
       DTS:CreationName="OnVariableValueChanged"
-      DTS:DTSID="{6BB18EC9-800A-40B8-8E92-C6808B97164F}"
+      DTS:DTSID="{74AB42AD-B16A-4CDD-AE18-A07FA389501A}"
       DTS:EventID="0"
       DTS:EventName="OnVariableValueChanged"
       DTS:LocaleID="-1">
@@ -1827,7 +1839,7 @@
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{EBBD3E85-B52A-46B6-A456-31E838B280B5}"
+          DTS:DTSID="{ABB68052-EA4C-4853-9B57-C9CF49ACA1E6}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -1840,7 +1852,7 @@
           DTS:refId="Package.EventHandlers[OnVariableValueChanged]\SCR Covert value to string"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{63B08C39-7C40-49FD-A881-A66DE659885D}"
+          DTS:DTSID="{CD7DC265-8F07-49D6-AA81-AD8F087C06E7}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SCR Covert value to string">
@@ -2519,14 +2531,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package.EventHandlers[OnVariableValueChanged]\SQL LogVariableValueChanged"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{153CDFC0-0417-4A70-A3EC-C8D6C973DA77}"
+          DTS:DTSID="{8F5157ED-09C7-4FA5-AEC2-D713DE7CBF54}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SQL LogVariableValueChanged">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F967C066-002B-427E-B174-AF8FF805EC0C}"
+              SQLTask:Connection="{23C0710E-B54A-430C-AE1E-9C41AC41C667}"
               SQLTask:SqlStatementSource="exec dbo.LogVariableValueChanged&#xA;@PackageLogID = ?&#xA;,@VariableName = ?&#xA;,@VariableValue = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -2554,7 +2566,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnVariableValueChanged].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{B63228FD-5FD0-4EC4-89BB-4DF8045B630D}"
+          DTS:DTSID="{7EB0E13A-62B5-406D-8FBC-E0C98CE04FCD}"
           DTS:From="Package.EventHandlers[OnVariableValueChanged]\SCR Covert value to string"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -2577,7 +2589,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <AnnotationLayout
           Text="/*****************************************************************************************************************&#xA;NAME:    LoadEXM.dtsx&#xA;PURPOSE: Load EXM database&#xA;&#xA;SUPPORT: Jaussi Consulting LLC&#xA;         www.jaussiconsulting.net&#xA;         jon@jaussiconsulting.net&#xA;&#xA;MODIFICATION LOG:&#xA;Ver       Date         Author                 Description&#xA;-------   ----------   --------------------   ------------------------------------------------------------&#xA;1.0       11/03/2019   Jon Jaussi (JJAUSSI)   1. Built this package for LDS BC IT243&#xA;&#xA;&#xA;RUNTIME: &#xA;1 sec&#xA;&#xA;NOTES:&#xA;This package loads the EXM (Example) database &#xA;&#xA;LICENSE: This code is covered by the GNU General Public License which guarantees end users&#xA;the freedom to run, study, share, and modify the code. This license grants the recipients&#xA;of the code the rights of the Free Software Definition. All derivative work can only be&#xA;distributed under the same license terms.&#xA;&#xA;******************************************************************************************************************/"
           ParentId="Package\Documentation"
-          Size="740,367"
+          Size="740,NaN"
           Id="ce57ee3c-d205-4c9a-9e88-24b1ee49b8eb"
           TopLeft="5.50000000000006,5.5">
           <AnnotationLayout.FontInfo>
@@ -2635,14 +2647,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="158,204"
+          PanelSize="158,205"
           Size="158,248"
           Id="Package\Parent container\Reload raw data"
           TopLeft="223,5.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="386,308"
+          PanelSize="386,309"
           Size="386,352"
           Id="Package\Parent container"
           TopLeft="141.5,107.5" />
@@ -2830,7 +2842,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\Parent container\Reload raw data\Load data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\Parent container\Reload raw data\Load data\OLE DB Destination"
@@ -2858,7 +2870,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
