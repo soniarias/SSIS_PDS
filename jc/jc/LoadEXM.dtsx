@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadEXM"
   DTS:PackageType="5"
-  DTS:VersionBuild="96"
-  DTS:VersionGUID="{02F89D47-B727-41C8-92E3-69842C37E873}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{127C8A6F-C88C-4957-9A64-6C3327875763}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2591,14 +2591,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <AnnotationLayout
           Text="/*****************************************************************************************************************&#xA;NAME:    LoadEXM.dtsx&#xA;PURPOSE: Load EXM database&#xA;&#xA;SUPPORT: Jaussi Consulting LLC&#xA;         www.jaussiconsulting.net&#xA;         jon@jaussiconsulting.net&#xA;&#xA;MODIFICATION LOG:&#xA;Ver       Date         Author                 Description&#xA;-------   ----------   --------------------   ------------------------------------------------------------&#xA;1.0       11/03/2019   Jon Jaussi (JJAUSSI)   1. Built this package for LDS BC IT243&#xA;&#xA;&#xA;RUNTIME: &#xA;1 sec&#xA;&#xA;NOTES:&#xA;This package loads the EXM (Example) database &#xA;&#xA;LICENSE: This code is covered by the GNU General Public License which guarantees end users&#xA;the freedom to run, study, share, and modify the code. This license grants the recipients&#xA;of the code the rights of the Free Software Definition. All derivative work can only be&#xA;distributed under the same license terms.&#xA;&#xA;******************************************************************************************************************/"
           ParentId="Package\Documentation"
-          Size="740,NaN"
+          Size="740,367"
           Id="ce57ee3c-d205-4c9a-9e88-24b1ee49b8eb"
           TopLeft="5.50000000000006,5.5">
           <AnnotationLayout.FontInfo>
             <mssge:FontInfo
               Family="Consolas"
               Size="11.25"
-              Color="#FF000000">
+              Color="#FFFFFFFF">
               <mssge:FontInfo.TextDecorations>
                 <av:TextDecorationCollection />
               </mssge:FontInfo.TextDecorations>
