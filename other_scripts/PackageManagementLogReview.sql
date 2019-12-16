@@ -31,7 +31,7 @@ SELECT p.PackageID
        INNER JOIN
        dbo.PackageTaskLog AS ptl ON ptl.PackageLogID = pl.PackageLogID
  WHERE 1 = 1
-       AND BatchLogID = 3
+       --AND BatchLogID = 3
  ORDER BY ptl.StartDateTime DESC;
 
 
@@ -51,7 +51,7 @@ SELECT p.PackageID
        dbo.PackageLog AS pl ON pl.PackageVersionID = pv.PackageVersionID
        INNER JOIN
        dbo.PackageErrorLog AS pel ON pel.PackageLogID = pl.PackageLogID
- WHERE BatchLogID = 22278   
+ --WHERE BatchLogID = 22278   
  ORDER BY LogDateTime DESC;
  
 
