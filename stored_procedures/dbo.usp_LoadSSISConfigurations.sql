@@ -27,7 +27,6 @@ MODIFICATION LOG:
 Ver      Date        Author           Description
 -------  ----------  ---------------  ------------------------------------------------------------------------
 1.0      11/03/2019  JJAUSSI          1. Created this process for LDS BC IT243
-1.1      11/09/2019  JJAUSSI          1. Added conn_DFNB3
 
 
 
