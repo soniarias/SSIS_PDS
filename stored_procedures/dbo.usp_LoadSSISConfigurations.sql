@@ -12,9 +12,6 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-
-
-
 CREATE PROCEDURE [dbo].[usp_LoadSSISConfigurations]
 AS
     BEGIN
@@ -35,7 +32,7 @@ approx 5 sec
 
 NOTES:  
 Load configured variable values for these levels...
-1) System
+1) System = CommonConfigurations
 2) Solution
 3) Package
 
@@ -73,44 +70,24 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
 
 
 
-
-
     -- 2) Solution Level Configurations
 
-
-    -- 2.1) jc
+	-- 2.1) LDSBC_IT243_xx  
 	
-    DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'jc';
-	
-
-	-- 2.1.1) v_data_share_root
-
-    INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
-                                        , ConfiguredValue
-                                        , PackagePath
-                                        , ConfiguredValueType)
-    VALUES
-          (
-           'jc'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_dw\txt_files\'
-         , '\Package.Variables[User::v_data_share_root].Properties[Value]'
-         , 'String'
-          );
+	DELETE FROM dbo.[SSIS Configurations]
+     WHERE ConfigurationFilter = 'LDSBC_IT243_xx';
 
 
 
 
-
-		  	
 
     -- 3) Package level configurations
 
 
-    -- 3.1) SSIS_PDS_Template
+    -- 3.1) SSIS_PDS_Template_xx
 
     DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'SSIS_PDS_Template';
+     WHERE ConfigurationFilter = 'SSIS_PDS_Template_xx';
 	
 
 	-- 3.1.1) v_data_share_root
@@ -121,8 +98,8 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
                                         , ConfiguredValueType)
     VALUES
           (
-           'SSIS_PDS_Template'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_dw\txt_files\'
+           'SSIS_PDS_Template_xx'
+		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_src\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
