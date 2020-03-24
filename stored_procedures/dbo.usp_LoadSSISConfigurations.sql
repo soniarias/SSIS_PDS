@@ -76,7 +76,21 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
 	
 	DELETE FROM dbo.[SSIS Configurations]
      WHERE ConfigurationFilter = 'LDSBC_IT243_xx';
+	
 
+	-- 2.1.1) v_data_share_root
+
+    INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
+                                        , ConfiguredValue
+                                        , PackagePath
+                                        , ConfiguredValueType)
+    VALUES
+          (
+           'LDSBC_IT243_xx'
+		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_src\txt_files\'
+         , '\Package.Variables[User::v_data_share_root].Properties[Value]'
+         , 'String'
+          );
 
 
 
