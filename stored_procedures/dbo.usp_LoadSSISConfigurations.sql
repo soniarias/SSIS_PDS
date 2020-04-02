@@ -40,6 +40,14 @@ Load configured variable values for these levels...
 Loads configuration managers for common configuration managers used in template package
 
 Connect strings are loaded with passwords to allow for automation of SSIS ETL based packages
+ 
+
+Example usage...
+
+EXEC dbo.usp_LoadSSISConfigurations;
+
+SELECT c.*
+  FROM dbo.[SSIS Configurations] as c;
          
 ******************************************************************************************************************/
 
