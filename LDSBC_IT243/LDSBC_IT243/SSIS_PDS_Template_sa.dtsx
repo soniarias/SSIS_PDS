@@ -1,0 +1,83 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/7/2021 12:30:42 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-FCNHRUI"
+  DTS:CreatorName="DESKTOP-FCNHRUI\Sonia Arias"
+  DTS:DTSID="{BF0B6DC9-ACFC-4EB6-8F64-9F3F5BE340B6}"
+  DTS:EnableConfig="True"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.150"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="SSIS_PDS_Template_sa"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{C015A28C-1097-4105-935D-ABE85C4DC2F1}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SSIS_PDS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{AFBF3C80-B32B-47A9-8453-362094733396}"
+      DTS:ObjectName="SSIS_PDS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=(local);Initial Catalog=SSIS_PDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Configurations>
+    <DTS:Configuration
+      DTS:ConfigurationString="SSIS_PDS_CONFIG_FILE"
+      DTS:ConfigurationType="5"
+      DTS:CreationName=""
+      DTS:DTSID="{16EBB523-C7B7-413F-81FB-3059FEDC600E}"
+      DTS:ObjectName="XML Configuration" />
+    <DTS:Configuration
+      DTS:ConfigurationString="&quot;SSIS_PDS&quot;;&quot;[dbo].[SSIS Configurations]&quot;;&quot;CommonConfigurations&quot;;"
+      DTS:ConfigurationType="7"
+      DTS:CreationName=""
+      DTS:DTSID="{55A4A2CA-0FEB-451B-9E5F-4615D33EDC79}"
+      DTS:ObjectName="System Level Configuration" />
+    <DTS:Configuration
+      DTS:ConfigurationString="&quot;SSIS_PDS&quot;;&quot;[dbo].[SSIS Configurations]&quot;;&quot;LDSBC_IT243_sa&quot;;"
+      DTS:ConfigurationType="7"
+      DTS:CreationName=""
+      DTS:DTSID="{56DCBE2A-9511-4EC6-A9AE-9DCCB2500277}"
+      DTS:ObjectName="Solution Level Configuration" />
+    <DTS:Configuration
+      DTS:ConfigurationString="&quot;SSIS_PDS&quot;;&quot;[dbo].[SSIS Configurations]&quot;;&quot;SSIS_PDS_Template_sa&quot;;"
+      DTS:ConfigurationType="7"
+      DTS:CreationName=""
+      DTS:DTSID="{4A73A710-02F5-4C2C-A232-E611A88142DC}"
+      DTS:ObjectName="Package Level Configuration" />
+    <DTS:Configuration
+      DTS:ConfigurationString="BatchLogID"
+      DTS:ConfigurationVariable="\Package.Variables[User::BatchLogID].Properties[Value]"
+      DTS:CreationName=""
+      DTS:DTSID="{9DADE806-4659-441F-AA95-AD5EEE753258}"
+      DTS:ObjectName="BatchLogID" />
+  </DTS:Configurations>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A0DADF4B-689D-4AFD-9967-EA4664FBD026}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables />
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
