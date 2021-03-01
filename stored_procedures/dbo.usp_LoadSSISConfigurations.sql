@@ -24,7 +24,7 @@ MODIFICATION LOG:
 Ver      Date        Author           Description
 -------  ----------  ---------------  ------------------------------------------------------------------------
 1.0      11/03/2019  JJAUSSI          1. Created this process for LDS BC IT243
-
+1.1      02/28/2021  SARIAS          1. Added LoadDFNB3_sa configuration
 
 
 RUNTIME: 
@@ -95,10 +95,10 @@ SELECT c.*
 
     -- 2) Solution Level Configurations
 
-	-- 2.1) LDSBC_IT243_xx  
+	-- 2.1) LDSBC_IT243_sa  
 	
 	DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'LDSBC_IT243_xx';
+     WHERE ConfigurationFilter = 'LDSBC_IT243_sa';
 	
 
 	-- 2.1.1) v_data_share_root
@@ -109,8 +109,8 @@ SELECT c.*
                                         , ConfiguredValueType)
     VALUES
           (
-           'LDSBC_IT243_xx'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_src\txt_files\'
+           'LDSBC_IT243_sa'
+		 , 'C:\LDSBC\IT_243\repos\DFNB_SA\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
@@ -121,10 +121,11 @@ SELECT c.*
     -- 3) Package level configurations
 
 
-    -- 3.1) SSIS_PDS_Template_xx
+
+    -- 3.1) SSIS_PDS_Template_sa
 
     DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'SSIS_PDS_Template_xx';
+     WHERE ConfigurationFilter = 'SSIS_PDS_Template_sa';
 	
 
 	-- 3.1.1) v_data_share_root
@@ -135,21 +136,22 @@ SELECT c.*
                                         , ConfiguredValueType)
     VALUES
           (
-           'SSIS_PDS_Template_xx'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_src\txt_files\'
+           'SSIS_PDS_Template_sa'
+		 , 'C:\LDSBC\IT_243\repos\DFNB_SA\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
 
+		  
 
 
-    -- 3.2) LoadDFNB3_xx
+    -- 3.2) LoadDFNB3_sa.dtsx
 
     DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'LoadDFNB3_xx';
+     WHERE ConfigurationFilter = 'LoadDFNB3_sa';
 	
 
-	-- 3.1.1) v_data_share_root
+	-- 3.2.1) v_data_share_root
 
     INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
                                         , ConfiguredValue
@@ -157,11 +159,12 @@ SELECT c.*
                                         , ConfiguredValueType)
     VALUES
           (
-           'LoadDFNB3_xx'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_src\txt_files\'
+           'LoadDFNB3_sa'
+		 , 'C:\LDSBC\IT_243\repos\DFNB_SA\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
+
 
 
 END;
