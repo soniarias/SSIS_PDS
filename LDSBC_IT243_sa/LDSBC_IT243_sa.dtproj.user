@@ -8,11 +8,13 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
-        <StartObjectID>SSIS_PDS_Template_sa.dtsx</StartObjectID>
+        <ServerName />
+        <PathOnServer />
+        <StartObjectID>LoadEXM_sa.dtsx</StartObjectID>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
-        <ProgressReporting>true</ProgressReporting>
+        <ProgressReporting>false</ProgressReporting>
         <ParameterConfigurationSensitiveValues>
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>

@@ -24,7 +24,9 @@ MODIFICATION LOG:
 Ver      Date        Author           Description
 -------  ----------  ---------------  ------------------------------------------------------------------------
 1.0      11/03/2019  JJAUSSI          1. Created this process for LDS BC IT243
-1.1      02/28/2021  SARIAS          1. Added LoadDFNB3_sa configuration
+1.1      02/28/2021  SARIAS           1. Added LoadDFNB3_sa configuration
+1.2		 03/01/2021  SARIAS			  1. Added conn_DFNB3 connection configuration
+1.3		 03/07/2021  SARIAS			  1. Added LoadEXM_sa configuration
 
 
 RUNTIME: 
@@ -161,6 +163,26 @@ SELECT c.*
           (
            'LoadDFNB3_sa'
 		 , 'C:\LDSBC\IT_243\repos\DFNB_SA\txt_files\'
+         , '\Package.Variables[User::v_data_share_root].Properties[Value]'
+         , 'String'
+          );
+
+    -- 3.3) LoadEXM_sa.dtsx
+
+    DELETE FROM dbo.[SSIS Configurations]
+     WHERE ConfigurationFilter = 'LoadEXM_sa';
+	
+
+	-- 3.3.1) v_data_share_root
+
+    INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
+                                        , ConfiguredValue
+                                        , PackagePath
+                                        , ConfiguredValueType)
+    VALUES
+          (
+           'LoadEXM_sa'
+		 , 'C:\LDSBC\IT_243\repos\EXM_jj\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
