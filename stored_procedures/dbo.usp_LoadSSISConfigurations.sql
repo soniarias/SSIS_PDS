@@ -27,7 +27,7 @@ Ver      Date        Author           Description
 1.1      02/28/2021  SARIAS           1. Added LoadDFNB3_sa configuration
 1.2		 03/01/2021  SARIAS			  1. Added conn_DFNB3 connection configuration
 1.3		 03/07/2021  SARIAS			  1. Added LoadEXM_sa configuration
-
+1.4		 03/07/2021  SARIAS			  1. Added LoadNAICSCodeHierDim_sa configuration
 
 RUNTIME: 
 approx 5 sec
@@ -187,7 +187,25 @@ SELECT c.*
          , 'String'
           );
 
+	-- 3.4) LoadNAICSCodeHierDim_sa
 
+    DELETE FROM dbo.[SSIS Configurations]
+     WHERE ConfigurationFilter = 'LoadNAICSCodeHierDim_sa';
+	
+
+	-- 3.4.1) v_data_share_root
+
+    INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
+                                        , ConfiguredValue
+                                        , PackagePath
+                                        , ConfiguredValueType)
+    VALUES
+          (
+           'LoadNAICSCodeHierDim_sa'
+		 , 'C:\LDSBC\IT_243\repos\DFNB_SA\xls_files\'
+         , '\Package.Variables[User::v_data_share_root].Properties[Value]'
+         , 'String'
+          );
 
 END;
 
